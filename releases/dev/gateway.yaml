@@ -1,0 +1,49 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: gateway-dev
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.container: semver:*
+spec:
+  releaseName: gateway-dev
+  chart:
+    git: git@github.com:<gateway chart repository>
+    path: charts/gateway
+    ref: master
+  valuesFrom:
+  - secretKeyRef:
+      name: image-creds
+      key: image-creds.yaml
+  - secretKeyRef:
+      name: gateway-license
+      key: license.yaml
+  - secretKeyRef:
+      name: env
+      key: env.yaml
+  values:
+    replicaCount: 1
+    container:
+      image: <image>
+      tag: '<image tag>'
+    imageCredentials:
+      name: "<repository>"
+      registry: "<repository>"
+      username: "<repository login>"
+    hazelcast:
+      enabled: false
+    service:
+      ports:
+      - name: http
+        internal: 8080
+        external: 80
+      - name: https
+        internal: 8443
+        external: 443
+
+
+
+
+
