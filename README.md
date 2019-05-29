@@ -99,8 +99,8 @@ kubectl delete customresourcedefinitions fluxhelmreleases.helm.integrations.flux
 
 ### Misc
 
-1)[Flux Annotations](https://github.com/weaveworks/flux/blob/036221706f3ffdeb215a3a037b97573b7cf17008/site/fluxctl.md#using-annotations)
+[Flux Annotations](https://github.com/weaveworks/flux/blob/036221706f3ffdeb215a3a037b97573b7cf17008/site/fluxctl.md#using-annotations)
 
-2)Troubleshooting:
-  a) monitor sealed secrets logs to see if any fails to decrypt
-  b) monitor flux and helm-operator logs 
+Troubleshooting:
+  monitor sealed secrets logs to see if any fails to decrypt
+  monitor flux and helm-operator logs 
