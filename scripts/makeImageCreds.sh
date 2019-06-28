@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Usage: ./makeSecret.sh -namespace=default -dest=destination.yaml -password=password"
 
 for ARGUMENT in "$@"
