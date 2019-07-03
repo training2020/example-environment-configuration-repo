@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: gateway-test
   chart:
-    git: git@github.com:<your git repo>                              # Repository where your Gateway Helm Chart is located, e.g. git@github.com:gituser/example-environment-configuration
+    git: git@github.com:<public git username>/gateway-helm-charts   # Public Git Username, e.g. git@github.com:gituser/gateway-helm-charts
     path: charts/gateway
     ref: master
   valuesFrom:
@@ -26,12 +26,12 @@ spec:
   values:
     replicaCount: 1
     container:
-      image: <your repository>/repository/docker-hosted/gateway     # Repository name, e.g docker.your.subdomain.com
+      image: <repository name>                                      # Repository name, e.g docker.cluster1.example.com/repository/docker-hosted/gateway
       tag: '<your image tag>'                                       # Image tag version, e.g 1.0
     imageCredentials:
-      name: "<your repository>"                                     # Repository name, e.g docker.your.subdomain.com
-      registry: "<your repository>"                                 # Repository name, e.g docker.your.subdomain.com
-      username: "<your repository login>"                           # Repository login credential, e.g dockerUser
+      name: "<image credential name>"                               # Image credential name, e.g nameExample
+      registry: "<registry name>"                                   # Registry name, e.g docker.cluster1.example.com
+      username: "<registry username>"                               # Registry username, e.g dockerUser
     hazelcast:
       enabled: false
     service:
