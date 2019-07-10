@@ -23,3 +23,5 @@
 *.DS_Store
 
 scripts/*
+!scripts/*.sh
+!scripts/*.md
