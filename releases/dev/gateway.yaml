@@ -30,7 +30,7 @@ spec:
       image: <repository name>                                      # Repository name, e.g docker.cluster1.example.com/repository/docker-hosted/gateway
       tag: '<your image tag>'                                       # Image tag version, e.g 1.0
     imageCredentials:
-      name: "<image credential name>"                               # Image credential name, e.g nameExample
+      name: "<image credential name>"                               # Image credential name, e.g gateway.name-example01
       registry: "<registry name>"                                   # Registry name, e.g docker.cluster1.example.com
       username: "<registry username>"                               # Registry username, e.g dockerUser
     hazelcast:
