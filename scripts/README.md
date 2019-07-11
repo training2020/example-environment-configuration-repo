@@ -21,7 +21,7 @@ Entities that include an _Environment_ section is supported.
 
 This command creates a Secret encrypted by Kubeseal for environment values:
 ```bash
-./makeEnv.sh -namespace=namespace -dest=../releases/<namespace>/env.yaml -ext=<extension>
+./makeEnv.sh -namespace=<namespace> -dest=../releases/<namespace>/env.yaml -ext=<extension>
 ```
 
 Since private keys files are required to be mounted onto the Gateway container and cannot be passed into an environment variable, it will be encrypted first as a Kubernetes secret and wrapped again with Sealed Secrets. In addition, this secret will be mounted onto the correct directory inside the container.
