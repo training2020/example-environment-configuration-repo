@@ -5,7 +5,7 @@ metadata:
   name: gateway-test
   namespace: test
   annotations:
-    flux.weave.works/automated: "false"
+    flux.weave.works/automated: "false"         # Flux to deploy new gateway image automatically
     flux.weave.works/tag.container: semver:*
 spec:
   releaseName: gateway-test
