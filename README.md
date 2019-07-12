@@ -4,6 +4,8 @@ This repository uses Weaveworks' Flux: https://github.com/weaveworks/flux. This 
 
 ## Introduction
 
+Recall that having your own dedicated environment configuration repository in GitHub allows you to separate environment configuration from static Gateway policies and services. In order to connect your configuration repository to the CI pipeline, you'll also need to install Weave Flux.
+
 To learn more about the _Example Environment Configuration Repo_ and _WeaveWorks' Flux_, go to [Introduction to Repository](https://github.com/CAAPIM/example-environment-configuration-repo/wiki/1.-Introduction-to-Example-Environment-Configuration-Repo).
 
 ### Install Instructions
