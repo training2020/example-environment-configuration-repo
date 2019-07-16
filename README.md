@@ -1,9 +1,10 @@
 # About
-This repository uses Weaveworks' Flux: https://github.com/weaveworks/flux. This example repository includes 2 gateway environments which is specified as _dev_ and _test_.
+This repository contains two sample Gateway environments specified as  _dev_ and _test_, allowing you to create a dedicated environment configuration repository in GitHub so that you can  separate environment configuration from static Gateway policies and services for your Gateway solutions. 
 
-Recall that having your own dedicated environment configuration repository in GitHub allows you to separate environment configuration from static Gateway policies and services. In order to connect your configuration repository to the CI pipeline, you'll also need to install Weave Flux.
+In order to connect your configuration repository to the CI pipeline, you'll also need to install Weave Flux:
+https://github.com/weaveworks/flux. 
 
-Learn how to set up your single-module Gateway solution by following the instructions in this repository's wiki: [Configure the Gateway Skeleton Repo](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/configure-gateway-skeleton-repo).
+Learn more about the steps to set up your configuration repository by visiting this repository's wiki page.
 
 # Giving Back
 ## How You Can Contribute
@@ -11,7 +12,7 @@ Contributions are welcome and much appreciated. To learn more, see the [Contribu
 
 ## License
 
-Copyright (c) 2018 CA. All rights reserved.
+Copyright (c) 2019 CA. All rights reserved.
 
 This software may be modified and distributed under the terms
 of the MIT license. See the [LICENSE][license-link] file for details.
