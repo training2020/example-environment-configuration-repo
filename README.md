@@ -1,21 +1,23 @@
-# Managing Gateway Deployments the GitOps way
-
+# About
 This repository uses Weaveworks' Flux: https://github.com/weaveworks/flux. This example repository includes 2 gateway environments which is specified as _dev_ and _test_.
-
-## Introduction
 
 Recall that having your own dedicated environment configuration repository in GitHub allows you to separate environment configuration from static Gateway policies and services. In order to connect your configuration repository to the CI pipeline, you'll also need to install Weave Flux.
 
-To learn more about the _Example Environment Configuration Repo_ and _WeaveWorks' Flux_, go to [Introduction to Repository](https://github.com/CAAPIM/example-environment-configuration-repo/wiki/1.-Introduction-to-Example-Environment-Configuration-Repo).
+Learn how to set up your single-module Gateway solution by following the instructions in this repository's wiki: [Configure the Gateway Skeleton Repo](https://github.com/CAAPIM/gateway-developer-skeleton-repo/wiki/configure-gateway-skeleton-repo).
 
-### Install Instructions
+# Giving Back
+## How You Can Contribute
+Contributions are welcome and much appreciated. To learn more, see the [Contribution Guidelines][contributing].
 
-To get started with the _Example Environment Configuration Repo_, follow the [Install Instructions](https://github.com/CAAPIM/example-environment-configuration-repo/wiki/2.-Install-Instructions).
+## License
 
-### Extra WeaveFlux Information
+Copyright (c) 2018 CA. All rights reserved.
 
-To learn more information for Flux (how to view WeaveFlux logs, removing Flux from your cluster, etc), go to  [Additional Tools Information](https://github.com/CAAPIM/example-environment-configuration-repo/wiki/3.-Additional-Tools-Information).
+This software may be modified and distributed under the terms
+of the MIT license. See the [LICENSE][license-link] file for details.
 
-### Troubleshooting
 
-For more information on troubleshooting, head over to the [Troubleshooting page](https://github.com/CAAPIM/example-environment-configuration-repo/wiki/4.-Troubleshooting).
+ [license-link]: /LICENSE
+ [contributing]: /CONTRIBUTING.md
+
+
